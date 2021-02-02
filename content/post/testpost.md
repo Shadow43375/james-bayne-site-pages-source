@@ -5,3 +5,5 @@ draft: true
 ---
 
 Hello world. Let's see if this works!
+
+$f(x) = x^2$
