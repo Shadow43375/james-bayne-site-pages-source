@@ -1,0 +1,95 @@
+baseURL: /
+languageCode: en-us
+defaultContentLanguage: en
+title: Writings
+theme: cupper-hugo-theme
+relativeUrls: true
+# googleAnalytics: UA-123456789-1
+# disqusShortname: yourdiscussshortname
+enableGitInfo: true
+
+taxonomies:
+  tag: tags
+
+permalinks:
+  post: /:filename/
+
+imaging:
+  quality: 99
+
+params:
+  description: INXJ male | Philosopher | Agnostic/Atheist | Intellectual Hedonist | Coder | Artist | Cryptopunk | 米国人
+  # codePenUser: someUser
+  katex: true
+  hideHeaderLinks: false
+  search: true
+  showThemeSwitcher: true
+  moveFooterToHeader: false
+  customCss:
+    - css/custom_01.css
+    - css/custom_02.css
+  customJs:
+    - js/custom_01.js
+    - js/custom_02.js
+
+menu:
+  nav:
+    - name: Home
+      url: /
+      weight: 1
+    - name: Blog
+      url: /post/
+      weight: 2
+    - name: Projects
+      url: /Projects/
+      weight: 3
+    # - name: Tags
+    #   url: /tags/
+    #   weight: 3
+    - name: About
+      url: /about/
+      weight: 4
+    # - name: RSS
+    #   url: /index.xml
+    #   weight: 5
+
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer: true
+    parser:
+      attribute: true
+      autoHeadingID: true
+    renderer:
+      hardWraps: false
+      unsafe: true
+      xHTML: false
+  highlight:
+    codeFences: false
+    hl_Lines: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
+    style: swapoff
+    tabWidth: 4
+    # highlight:
+    #   codeFences: false
+    #   hl_Lines: ""
+    #   lineNoStart: 1
+    #   lineNos: false
+    #   lineNumbersInTable: true
+    #   noClasses: true
+    #   style: monokai
+    #   tabWidth: 4
+  
+  tableOfContents:
+    endLevel: 6
+    startLevel: 3
