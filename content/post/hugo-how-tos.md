@@ -2,7 +2,7 @@
 title: "Hugo How-tos"
 tags: ['Hugo', 'Static Site Generators', 'JAM Stack']
 date: 2021-01-19T05:23:18-05:00
-draft: false
+draft: true 
 ---
 
 ## How do you install Hugo?
